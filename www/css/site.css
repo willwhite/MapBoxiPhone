@@ -1,0 +1,12 @@
+body {
+  font:13px/20px 'Helvetica Neue';
+  color:#222;
+}
+
+#map {
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+}

@@ -5,9 +5,9 @@
 	<key>DetectPhoneNumber</key>
 	<true/>
 	<key>TopActivityIndicator</key>
-	<string>gray</string>
+	<string>black</string>
 	<key>EnableLocation</key>
-	<false/>
+	<true/>
 	<key>EnableAcceleration</key>
 	<true/>
 	<key>EnableViewportScale</key>
@@ -23,7 +23,9 @@
 	<key>OpenAllWhitelistURLsInWebView</key>
 	<false/>
 	<key>ExternalHosts</key>
-	<array/>
+	<array>
+		<string>*</string>
+	</array>
 	<key>Plugins</key>
 	<dict>
 		<key>com.phonegap.accelerometer</key>
