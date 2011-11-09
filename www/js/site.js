@@ -1,6 +1,6 @@
 var MBTiles = {
     getTile: function(tile, success, fail) {
-        return PhoneGap.exec(success, fail, 'MBTiles', 'getTile', []);
+        return PhoneGap.exec(success, fail, 'MBTiles', 'getTile', tile);
     }
 };
 
@@ -16,7 +16,14 @@ function appReady() {
             new mm.Location(tj.center[1], tj.center[0]),
                 tj.center[2]);
     });
-    MBTiles.getTile();
+    var res = MBTiles.getTile([5,3,2],
+        function() {
+            alert('success');
+        },
+        function() {
+            alert('failure');
+        });
+    alert(res);
 }
 
 document.addEventListener('deviceready', appReady, false);

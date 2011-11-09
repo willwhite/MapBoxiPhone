@@ -34,11 +34,18 @@
 		91539E2C1469B4C1003E1A74 /* PhoneGap.plist in Resources */ = {isa = PBXBuildFile; fileRef = 91539E2B1469B4C1003E1A74 /* PhoneGap.plist */; };
 		91539E301469B4C1003E1A74 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 91539E2F1469B4C1003E1A74 /* AppDelegate.m */; };
 		91539E3E1469B56D003E1A74 /* www in Resources */ = {isa = PBXBuildFile; fileRef = 91539E3D1469B56D003E1A74 /* www */; };
+		91541D4D146B09D700D8FEF4 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 91541D48146B09D700D8FEF4 /* FMDatabase.m */; };
+		91541D4E146B09D700D8FEF4 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 91541D4A146B09D700D8FEF4 /* FMDatabaseAdditions.m */; };
+		91541D4F146B09D700D8FEF4 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 91541D4C146B09D700D8FEF4 /* FMResultSet.m */; };
+		91541D51146B0A1200D8FEF4 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 91541D50146B0A1200D8FEF4 /* libsqlite3.0.dylib */; };
+		91541D55146B0AF100D8FEF4 /* dc-bright.mbtiles in Resources */ = {isa = PBXBuildFile; fileRef = 91541D54146B0AF100D8FEF4 /* dc-bright.mbtiles */; };
 		91D745C41469CCF3002A4179 /* MBTiles.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D745C31469CCF3002A4179 /* MBTiles.m */; };
+		91D745CD1469D4B6002A4179 /* icon_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 91D745CC1469D4B6002A4179 /* icon_normal.png */; };
+		91D745CF1469D4CE002A4179 /* icon_retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 91D745CE1469D4CE002A4179 /* icon_retina.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		91539DEB1469B4C1003E1A74 /* MapBoxiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapBoxiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91539DEB1469B4C1003E1A74 /* MapBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91539DEF1469B4C1003E1A74 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		91539DF11469B4C1003E1A74 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		91539DF31469B4C1003E1A74 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -52,10 +59,10 @@
 		91539E031469B4C1003E1A74 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		91539E051469B4C1003E1A74 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		91539E071469B4C1003E1A74 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
-		91539E0B1469B4C1003E1A74 /* MapBoxiPhone-Info.plist */ = {isa = PBXFileReference; path = "MapBoxiPhone-Info.plist"; sourceTree = "<group>"; };
+		91539E0B1469B4C1003E1A74 /* MapBoxiPhone-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapBoxiPhone-Info.plist"; sourceTree = "<group>"; };
 		91539E0D1469B4C1003E1A74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		91539E0F1469B4C1003E1A74 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		91539E111469B4C1003E1A74 /* MapBoxiPhone-Prefix.pch */ = {isa = PBXFileReference; path = "MapBoxiPhone-Prefix.pch"; sourceTree = "<group>"; };
+		91539E111469B4C1003E1A74 /* MapBoxiPhone-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MapBoxiPhone-Prefix.pch"; sourceTree = "<group>"; };
 		91539E121469B4C1003E1A74 /* PhoneGap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhoneGap.framework; path = /Users/Shared/PhoneGap/Frameworks/PhoneGap.framework; sourceTree = "<absolute>"; };
 		91539E171469B4C1003E1A74 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Resources/en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		91539E1B1469B4C1003E1A74 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = Resources/es.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -69,8 +76,18 @@
 		91539E2E1469B4C1003E1A74 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		91539E2F1469B4C1003E1A74 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Classes/AppDelegate.m; sourceTree = "<group>"; };
 		91539E3D1469B56D003E1A74 /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = "<group>"; };
+		91541D47146B09D700D8FEF4 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		91541D48146B09D700D8FEF4 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		91541D49146B09D700D8FEF4 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		91541D4A146B09D700D8FEF4 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		91541D4B146B09D700D8FEF4 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		91541D4C146B09D700D8FEF4 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		91541D50146B0A1200D8FEF4 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		91541D54146B0AF100D8FEF4 /* dc-bright.mbtiles */ = {isa = PBXFileReference; lastKnownFileType = file; path = "dc-bright.mbtiles"; sourceTree = "<group>"; };
 		91D745C31469CCF3002A4179 /* MBTiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTiles.m; sourceTree = "<group>"; };
 		91D745C61469CDDF002A4179 /* MBTiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBTiles.h; sourceTree = "<group>"; };
+		91D745CC1469D4B6002A4179 /* icon_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_normal.png; sourceTree = "<group>"; };
+		91D745CE1469D4CE002A4179 /* icon_retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_retina.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91541D51146B0A1200D8FEF4 /* libsqlite3.0.dylib in Frameworks */,
 				91539DF01469B4C1003E1A74 /* Foundation.framework in Frameworks */,
 				91539DF21469B4C1003E1A74 /* UIKit.framework in Frameworks */,
 				91539DF41469B4C1003E1A74 /* CoreGraphics.framework in Frameworks */,
@@ -108,6 +126,9 @@
 		91539DDD1469B4C1003E1A74 = {
 			isa = PBXGroup;
 			children = (
+				91541D50146B0A1200D8FEF4 /* libsqlite3.0.dylib */,
+				91D745CE1469D4CE002A4179 /* icon_retina.png */,
+				91D745CC1469D4B6002A4179 /* icon_normal.png */,
 				91539E3D1469B56D003E1A74 /* www */,
 				91539E091469B4C1003E1A74 /* MapBoxiPhone */,
 				91539DEE1469B4C1003E1A74 /* Frameworks */,
@@ -118,7 +139,7 @@
 		91539DEC1469B4C1003E1A74 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				91539DEB1469B4C1003E1A74 /* MapBoxiPhone.app */,
+				91539DEB1469B4C1003E1A74 /* MapBox.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -146,6 +167,7 @@
 		91539E091469B4C1003E1A74 /* MapBoxiPhone */ = {
 			isa = PBXGroup;
 			children = (
+				91541D45146B09BC00D8FEF4 /* Externals */,
 				91539E121469B4C1003E1A74 /* PhoneGap.framework */,
 				91539E141469B4C1003E1A74 /* Resources */,
 				91539E2D1469B4C1003E1A74 /* Classes */,
@@ -171,6 +193,7 @@
 		91539E141469B4C1003E1A74 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				91541D53146B0ACF00D8FEF4 /* Tilesets */,
 				91539E291469B4C1003E1A74 /* Capture.bundle */,
 				91539E151469B4C1003E1A74 /* en.lproj */,
 				91539E191469B4C1003E1A74 /* es.lproj */,
@@ -233,6 +256,27 @@
 			name = Plugins;
 			sourceTree = "<group>";
 		};
+		91541D45146B09BC00D8FEF4 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				91541D47146B09D700D8FEF4 /* FMDatabase.h */,
+				91541D48146B09D700D8FEF4 /* FMDatabase.m */,
+				91541D49146B09D700D8FEF4 /* FMDatabaseAdditions.h */,
+				91541D4A146B09D700D8FEF4 /* FMDatabaseAdditions.m */,
+				91541D4B146B09D700D8FEF4 /* FMResultSet.h */,
+				91541D4C146B09D700D8FEF4 /* FMResultSet.m */,
+			);
+			name = Externals;
+			sourceTree = "<group>";
+		};
+		91541D53146B0ACF00D8FEF4 /* Tilesets */ = {
+			isa = PBXGroup;
+			children = (
+				91541D54146B0AF100D8FEF4 /* dc-bright.mbtiles */,
+			);
+			name = Tilesets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -253,7 +297,7 @@
 			);
 			name = MapBoxiPhone;
 			productName = "MapBox iPhone";
-			productReference = 91539DEB1469B4C1003E1A74 /* MapBoxiPhone.app */;
+			productReference = 91539DEB1469B4C1003E1A74 /* MapBox.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -298,6 +342,9 @@
 				91539E2A1469B4C1003E1A74 /* Capture.bundle in Resources */,
 				91539E2C1469B4C1003E1A74 /* PhoneGap.plist in Resources */,
 				91539E3E1469B56D003E1A74 /* www in Resources */,
+				91D745CD1469D4B6002A4179 /* icon_normal.png in Resources */,
+				91D745CF1469D4CE002A4179 /* icon_retina.png in Resources */,
+				91541D55146B0AF100D8FEF4 /* dc-bright.mbtiles in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +374,9 @@
 				91539E101469B4C1003E1A74 /* main.m in Sources */,
 				91539E301469B4C1003E1A74 /* AppDelegate.m in Sources */,
 				91D745C41469CCF3002A4179 /* MBTiles.m in Sources */,
+				91541D4D146B09D700D8FEF4 /* FMDatabase.m in Sources */,
+				91541D4E146B09D700D8FEF4 /* FMDatabaseAdditions.m in Sources */,
+				91541D4F146B09D700D8FEF4 /* FMResultSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +472,7 @@
 				GCC_PREFIX_HEADER = "MapBox iPhone/MapBoxiPhone-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
 				INFOPLIST_FILE = "MapBox iPhone/MapBoxiPhone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -432,8 +483,8 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				PRODUCT_NAME = MapBoxiPhone;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = MapBox;
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -449,6 +500,7 @@
 				GCC_PREFIX_HEADER = "MapBox iPhone/MapBoxiPhone-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = "PHONEGAP_FRAMEWORK=YES";
 				INFOPLIST_FILE = "MapBox iPhone/MapBoxiPhone-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_LDFLAGS = (
 					"-weak_framework",
 					UIKit,
@@ -459,8 +511,8 @@
 					"-weak_library",
 					/usr/lib/libSystem.B.dylib,
 				);
-				PRODUCT_NAME = MapBoxiPhone;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_NAME = MapBox;
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

@@ -9,6 +9,6 @@
 @property (nonatomic, copy) NSString* callbackID;
 
 //Instance Method  
-- (void) print:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
+- (void) getTile:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options;
 
 @end

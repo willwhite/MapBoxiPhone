@@ -1,13 +1,27 @@
 //
 //  MBTiles.m
 #import "MBTiles.h"
+#import "FMDatabase.h"
 
 @implementation MBTiles 
 
-// @synthesize callbackID;
+@synthesize callbackID;
 
--(void)print:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options  
+-(void)getTile:(NSMutableArray*)arguments withDict:(NSMutableDictionary*)options  
 {
+    
+    db = [[FMDatabase databaseWithPath:[tileSetURL relativePath]] retain];
+    
+    
+    self.callbackID = [arguments pop];
+    NSArray *tileCoord = [arguments objectAtIndex:0];    
+    NSString* jsString = nil;
+    jsString = [NSString stringWithFormat: @"2"];
+    PluginResult* pluginResult = [PluginResult
+        resultWithStatus:PGCommandStatus_OK messageAsString:
+            [jsString
+                  stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    [super writeJavascript: [pluginResult toSuccessCallbackString:self.callbackID]];
 }
 
 // #pragma mark -
